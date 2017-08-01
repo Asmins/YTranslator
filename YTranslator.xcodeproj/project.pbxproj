@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0104CF7B6DB448645D1E3F6F /* Pods_YTranslator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B904F108B437E04EF2674288 /* Pods_YTranslator.framework */; };
 		821E8CBC1F309DE900C9BDED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821E8CBB1F309DE900C9BDED /* AppDelegate.swift */; };
 		821E8CC11F309DE900C9BDED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 821E8CBF1F309DE900C9BDED /* Main.storyboard */; };
 		821E8CC31F309DE900C9BDED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 821E8CC21F309DE900C9BDED /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		602C1363EFAFAEB87B0553C6 /* Pods-YTranslator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTranslator.release.xcconfig"; path = "Pods/Target Support Files/Pods-YTranslator/Pods-YTranslator.release.xcconfig"; sourceTree = "<group>"; };
 		821E8CB81F309DE900C9BDED /* YTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		821E8CBB1F309DE900C9BDED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		821E8CC01F309DE900C9BDED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		821E8CC51F309DE900C9BDED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		821E8CC71F309DE900C9BDED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		821E8CD31F30A0D500C9BDED /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		9D0E92C634D2DF79B9431686 /* Pods-YTranslator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTranslator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YTranslator/Pods-YTranslator.debug.xcconfig"; sourceTree = "<group>"; };
+		B904F108B437E04EF2674288 /* Pods_YTranslator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YTranslator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0104CF7B6DB448645D1E3F6F /* Pods_YTranslator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72BE177DD54824FCE7BBC9DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B904F108B437E04EF2674288 /* Pods_YTranslator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		821E8CAF1F309DE800C9BDED = {
 			isa = PBXGroup;
 			children = (
 				821E8CBA1F309DE900C9BDED /* YTranslator */,
 				821E8CB91F309DE900C9BDED /* Products */,
+				9D8B9F689E9AF4BA165FB199 /* Pods */,
+				72BE177DD54824FCE7BBC9DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +127,15 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		9D8B9F689E9AF4BA165FB199 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D0E92C634D2DF79B9431686 /* Pods-YTranslator.debug.xcconfig */,
+				602C1363EFAFAEB87B0553C6 /* Pods-YTranslator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 821E8CCA1F309DE900C9BDED /* Build configuration list for PBXNativeTarget "YTranslator" */;
 			buildPhases = (
+				82807E9D03A08CE400AEEC03 /* [CP] Check Pods Manifest.lock */,
 				821E8CB41F309DE800C9BDED /* Sources */,
 				821E8CB51F309DE800C9BDED /* Frameworks */,
 				821E8CB61F309DE800C9BDED /* Resources */,
+				C22D060D81FAFC6CA7A6FC34 /* [CP] Embed Pods Frameworks */,
+				6C6A6162A4241F2884723DD8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,6 +205,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C6A6162A4241F2884723DD8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YTranslator/Pods-YTranslator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82807E9D03A08CE400AEEC03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C22D060D81FAFC6CA7A6FC34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YTranslator/Pods-YTranslator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		821E8CB41F309DE800C9BDED /* Sources */ = {
@@ -304,6 +379,7 @@
 		};
 		821E8CCB1F309DE900C9BDED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D0E92C634D2DF79B9431686 /* Pods-YTranslator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YTranslator/Info.plist;
@@ -316,6 +392,7 @@
 		};
 		821E8CCC1F309DE900C9BDED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 602C1363EFAFAEB87B0553C6 /* Pods-YTranslator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YTranslator/Info.plist;
